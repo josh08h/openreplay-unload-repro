@@ -1,0 +1,17 @@
+{
+  "name": "openreplay-pagehide-mre",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/page.js --bundle --format=iife --outfile=public/page.bundle.js",
+    "serve": "node server.mjs",
+    "repro": "node run.mjs"
+  },
+  "dependencies": {
+    "@openreplay/tracker": "19.0.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.2",
+    "puppeteer-core": "24.22.0"
+  }
+}
